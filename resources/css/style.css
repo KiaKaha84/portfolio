@@ -168,7 +168,7 @@ h5 {
 /*---------------------------------------------------------------------*/
 
 header {
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img/night.jpeg");
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("img/white.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -242,7 +242,8 @@ header {
 .site-photo img {
     opacity: 0.7;
     width: 100%;
-    height: auto;
+    height: 350px;
+    background-size: cover;
     transform: scale(1.15);
     transition: transform 0.5s, opacity 0.5s;
 
