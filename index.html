@@ -6,6 +6,7 @@
     <title> Maciej Weber-Dąbrowski | A Front-end Developer's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
@@ -13,13 +14,14 @@
 
 </head>
 <body>
-<header>
+<header id="home">
     <nav>
         <div class="row">
             <img src="logo/weber1.png" alt="Logo Image" class="logo">
+            <img src="logo/weber1.png" alt="Logo Image" class="StickyLogo">
 
             <ul class="main-nav">
-                <li><a href="#">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#gallery">My Work</a></li>
@@ -31,11 +33,11 @@
     <div class="hero-text-box">
         <h1>Hello,<br> I'm Maciek,<br> A Web Designer / Front-End Developer  </h1>
         <h5> I work for a living, but I live to create.</h5>
-        <a href="#" class="btn btn-full">Contact me</a>
+        <a href="#" class="btn btn-full js--scroll-to-contact">Contact me</a>
         <a href="/resources/data/Maciej_Weber-Dąbrowski-CV-ENG.pdf" class="btn btn-ghost" download="Maciej_Weber-Dabrowski_CV_ENG">Download my CV</a>
     </div>
 </header>
-<section class="section-features" id="about">
+<section class="section-features js--section-features" id="about">
     <div class="row">
         <h2>
             My name is Maciej Weber-Dąbrowski.
@@ -45,7 +47,7 @@
             new technologies is what my life is all about!
         </p>
     </div>
-    <div class="row">
+    <div class="row js--wp-1">
         <div class="col span-1-of-4 box">
             <ion-icon name="infinite" class="icon-big"></ion-icon>
             <h3>Passion</h3>
@@ -75,7 +77,7 @@
     <ul class="sites-showcase clearfix">
         <li>
             <figure class="site-photo">
-                <img src="resources/css/img/czaplatlo.jpg.jpg" alt="Paweł Czaplicki - Trener Personalny">
+                <img src="resources/css/img/czaplatlo.jpg" alt="Paweł Czaplicki - Trener Personalny">
             </figure>
         </li>
         <li>
@@ -103,7 +105,7 @@
     <div class="row">
         <h2> Testimonials</h2>
     </div>
-    <div class="row">
+    <div class="row js--wp-2">
         <div class="col span-1-of-3">
             <blockquote> Here I will post some testimonials from my future customers
                 <cite> Maciej Weber-Dąbrowski</cite>
@@ -122,8 +124,8 @@
     </div>
 
 </section>
-<section class="section-form">
-    <div class="row">
+<section class="section-form js--section-contact">
+    <div class="row js--wp-3">
         <h2> I'm happy to hear from you</h2>
 
     </div>
@@ -186,6 +188,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+<script src="vendors/js/jquery.waypoints.min.js"></script>
 <script src="resources/js/script.js"></script>
 </body>
 
